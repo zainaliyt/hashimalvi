@@ -5,11 +5,12 @@ hmtl{
 }
 
 body{
-    background-color:#7d5f4b;
+    background-color:white;
     margin:30px 50px;
     color:black;
     user-select:none;
 }
+
 
 .wrapper{
     display:grid;
@@ -158,32 +159,133 @@ footer{
 
 /* Store Page */
 
-
-
-.card{
-    grid-area:pr2;
-    width:360px;
-    background-size:cover;
-    background-position:center;
-    background:white;
-    height:470px;
+.second-container{
+     display:grid;
+    grid-row-gap:5px;
+    justify-items:center;
+    grid-column-gap:35px;
+    padding:0;
+    list-style:none;
+    grid-template-areas:
+                    "pr1 pr2 pr3 pr4"
+                    "pr1 pr2 pr3 pr4"
+   ;
 }
 
 .pr1{
-    height:310px;
-    overflow:hidden;
+    position:relative;
+     min-width:200px;
+    min-height:400px;
+    grid-area:pr1;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content:center;
 }
 
+.pr2{
+    position:relative;
+     min-width:200px;
+    min-height:400px;
+    grid-area:pr2;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content:center;
+}
 
+.pr3{
+    position:relative;
+   min-width:200px;
+    min-height:400px;
+    grid-area:pr3;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content:center;
+}
 
+.pr4{
+    position:relative;
+ min-width:200px;
+    min-height:400px;
+    grid-area:pr4;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content:center;
+}
 
+.prtags{
+    position:absolute;
+    top:10;
+    color:black;
+    min-width:198px;
+    min-height:30px;
+    max-width:198px;
+    max-height:40px;
+    font-size:30px;
+  
 
+}
+
+.prcomp{
+    position:absolute;
+    top:50;
+    left:25;
+    
+    font-size:10px;
+    min-width:60px;
+    min-height:10px;
+    max-width:60px;
+    max-height:20px;
+    color:black;
+
+}
+
+.prbox{
+     background:#6f4e37;
+     color:white;
+     display:grid;
+     align-items:center;
+     justify-items:center;
+      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+      padding:1.5rem;
+     
+}
+
+.prpic{
+    position:relative;
+    top:-20;
+    background:url(images/pr1.jpg);
+    background-size:cover;
+    width:198px;
+    height:198px;
+}
 
 /* Store Page Ending */
 
 
 
+@media screen and (max-width: 1212px){
+    .first-container{
+     grid-template-areas:
+                    "maintitle maintitle"
+                    "maincontent maincontent"
+                    "boxa boxb"
+   ;
+   
+}
 
+.boxa{
+        display:flex;
+      
+    flex-direction:column;
+    align-content:center;
+    justify-content:center;
+}
+
+}
 
 
 
